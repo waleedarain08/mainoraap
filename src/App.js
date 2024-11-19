@@ -86,12 +86,13 @@ const ScrapbookApp = () => {
           Add Question
         </button>
       </div>
+      <h5>Your Name</h5>
       <input
-        style={{marginTop:"3%",marginLeft:"5%",marginBottom:"1%"}}
+       // style={{marginTop:"3%",marginLeft:"5%",marginBottom:"1%"}}
         type="text"
         value={name}
         onChange={(e) => setName(e.target.value)}
-        placeholder="Your name"
+        placeholder="Enter Your Name"
         className="p-2 border border-gray-300 rounded-lg mb-4"
       />
       <ul>
