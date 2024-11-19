@@ -58,7 +58,7 @@ const ScrapbookApp = () => {
         answers: arrayUnion({ name, answer }),
       });
       setAnswer('');
-      setName('')
+      //setName('')
     } catch(err) {
       console.error("writeToDB failed. reason :", err)
     }
