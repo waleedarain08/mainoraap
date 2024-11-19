@@ -50,6 +50,9 @@ const ScrapbookApp = () => {
   };
 
   const handleAddAnswer = async(question) => {  
+    if(name===""){
+      alert("Please Enter Your Name");
+    }else{
     setSelectedQuestionId(question.id);  
    // console.log(name,answer)
     try {
@@ -62,6 +65,7 @@ const ScrapbookApp = () => {
     } catch(err) {
       console.error("writeToDB failed. reason :", err)
     }
+  }
   };
 
   return (
