@@ -54,7 +54,6 @@ const ScrapbookApp = () => {
       alert("Please Enter Your Name");
     }else{
     setSelectedQuestionId(question.id);  
-   // console.log(name,answer)
     try {
       console.log(selectedQuestionId);
       await updateDoc(doc(collection(db, "questions"), question.id), {
@@ -88,7 +87,6 @@ const ScrapbookApp = () => {
       </div>
       <h5>Your Name</h5>
       <input
-       // style={{marginTop:"3%",marginLeft:"5%",marginBottom:"1%"}}
         type="text"
         value={name}
         onChange={(e) => setName(e.target.value)}
